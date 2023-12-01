@@ -10,6 +10,7 @@ std::vector<std::string> read_from_file(const char*);
 int part1(std::vector<std::string>);
 int count_digits(const std::string& str);
 
+void part2();
 
 int 
 main() 
@@ -49,7 +50,7 @@ part1(std::vector<std::string> input)
         ss << input[i][j];
       }
 
-      if ( current_digit == 1 || current_digit == digits_in_word) {
+      if ( current_digit == 1 || current_digit == digits_in_word ) {
         ss << input[i][j];
       }
     }
@@ -58,14 +59,14 @@ part1(std::vector<std::string> input)
   }
 
   int result = 0;
-  for(auto var : string_numbers) {
-    std::cout << var << std::endl;
-    int number = std::stoi(var);
+  for( const auto &num : string_numbers ) {
+    int number = std::stoi(num);
     result += number;
   }
 
   return result;
 }
+
 
 
 int count_digits(const std::string& str) {
