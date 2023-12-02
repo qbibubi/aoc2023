@@ -1,5 +1,5 @@
 CC=clang++
-CFLAGS= -Wall -Wextra -std=c++17
+CFLAGS= -Wall -Wextra -Wpedantic -std=c++17
 
 SRC=main.cpp
 TARGET=ans
