@@ -6,7 +6,7 @@
 #include <vector>
 #include <sstream>
 
-template<typename T> std::vector<T> read_from_file(const char*); 
+template<typename T> std::vector<T> read_from_file(const std::string&); 
 template<typename T> T convert(const std::string& value); 
 template<> std::string convert<std::string>(const std::string& value);
 int part1(const std::vector<std::string>&);
